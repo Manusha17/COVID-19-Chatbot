@@ -31,7 +31,7 @@ const config = {
     )
   ],
   state: {},
-  // customComponents: { botAvatar: (props) => <CoBotAvatar {...props} /> },
+  customComponents: { botAvatar: (props) => <CoBotAvatar {...props} /> },
   widgets: [
     {
       widgetName: "overview",
