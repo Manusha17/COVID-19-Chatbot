@@ -43,16 +43,16 @@ class MessageParser {
     }
 
     if (
-      message.includes("faqs") ||
-      message.includes("question") ||
-      message.includes("questions")
+      message.includes("joke") ||
+      message.includes("jokes") ||
+      message.includes("funny")
     ) {
-      return this.actionProvider.handleContact();
+      return this.actionProvider.handleJoke();
     }
 
-    // if (message.includes("airport")) {
-    //   return this.actionProvider.handleAirport();
-    // }
+    if (message.includes("thanks") || message.includes("thank you")) {
+      return this.actionProvider.handleThanks();
+    }
 
     return this.actionProvider.handleOptions({ withAvatar: true });
   }

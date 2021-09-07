@@ -4,6 +4,7 @@ import GlobalStatistics from "./widgets/GlobalStatistics";
 import LocalStatistics from "./widgets/LocalStatistics";
 import Contact from "./widgets/Contact";
 import MedicineDelivery from "./widgets/MedicineDelivery";
+import CoBotAvatar from "./CoBotAvatar";
 
 const config = {
   lang: "no",
@@ -30,7 +31,7 @@ const config = {
     )
   ],
   state: {},
-  customComponents: {},
+  // customComponents: { botAvatar: (props) => <CoBotAvatar {...props} /> },
   widgets: [
     {
       widgetName: "overview",
