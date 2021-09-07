@@ -6,12 +6,8 @@ import Contact from "./widgets/Contact";
 import MedicineDelivery from "./widgets/MedicineDelivery";
 
 const config = {
-  // initialMessages: [
-  //   createChatBotMessage(
-  //     `Hi, I'm here to provide you with latest COVID 19 data to keep you safe!`
-  //   )
-  // ]
   lang: "no",
+  botName: "CoBot",
   customStyles: {
     botMessageBox: {
       backgroundColor: "#04668a"
@@ -25,7 +21,7 @@ const config = {
       `Hi, I'm here to provide you with latest COVID 19 data to keep you safe!`
     ),
     createChatBotMessage(
-      "Here's a quick overview over what I need to function. ask me about the different parts to dive deeper.",
+      "Here's a quick overview of what I can help you with. You can also type in.",
       {
         withAvatar: false,
         delay: 400,
@@ -33,13 +29,7 @@ const config = {
       }
     )
   ],
-  state: {
-    airports: [],
-    selectedAirport: { iata: "OSL", nameCompact: "Oslo" },
-    statsType: "",
-    selectedFlightId: "",
-    selectedFlight: null
-  },
+  state: {},
   customComponents: {},
   widgets: [
     {

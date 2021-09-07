@@ -5,12 +5,8 @@ class MessageParser {
   }
 
   parse(message) {
+    message = message.toLowerCase();
     console.log(message);
-
-    // if (this.containsFlightId(message)) {
-    //   const id = this.containsFlightId(message);
-    //   return this.actionProvider.handleFlightIdMatch(id);
-    // }
 
     if (
       message.includes("options") ||
@@ -24,23 +20,39 @@ class MessageParser {
       message.includes("talk") ||
       message.includes("speak") ||
       message.includes("real person") ||
-      message.includes("person") ||
+      message.includes("call") ||
+      message.includes("emergency") ||
       message.includes("contact")
     ) {
-      return this.actionProvider.handleContactInfo();
+      return this.actionProvider.handleContact();
     }
 
-    if (message.includes("parking") || message.includes("parkering")) {
-      return this.actionProvider.handleParkingOptions();
+    if (
+      message.includes("stats") ||
+      message.includes("statistics") ||
+      message.includes("deaths")
+    ) {
+      return [
+        this.actionProvider.handleGlobalStats(),
+        this.actionProvider.handleLocalStats()
+      ];
     }
 
-    if (message.includes("flights") || message.includes("flight")) {
-      return this.actionProvider.handleFlightsChoice();
+    if (message.includes("medicine") || message.includes("delivery")) {
+      return this.actionProvider.handleMedicine();
     }
 
-    if (message.includes("airport")) {
-      return this.actionProvider.handleAirport();
+    if (
+      message.includes("faqs") ||
+      message.includes("question") ||
+      message.includes("questions")
+    ) {
+      return this.actionProvider.handleContact();
     }
+
+    // if (message.includes("airport")) {
+    //   return this.actionProvider.handleAirport();
+    // }
 
     return this.actionProvider.handleOptions({ withAvatar: true });
   }

@@ -22,11 +22,6 @@ const GeneralOptions = (props) => {
       handler: props.actionProvider.handleMedicine,
       id: 4
     }
-    // {
-    //   name: "switch airport",
-    //   handler: props.actionProvider.handleAirport,
-    //   id: 5
-    // }
   ];
   return <Options options={options} title="Options" {...props} />;
 };

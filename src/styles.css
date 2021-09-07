@@ -1,5 +1,6 @@
 .App {
   font-family: sans-serif;
+  text-align: center;
 }
 .options {
   padding-bottom: 15px;
@@ -83,5 +84,36 @@
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  fill: white;
+  fill: #fff;
+}
+
+.app-chatbot-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 10px;
+  color: #fff;
+  background-color: #0d2d44;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  z-index: 9999;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-chatbot-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 40px;
+  bottom: 55px;
+  z-index: 9999;
+  box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
+  border-radius: 5px;
+}
+.app-chatbot-button-icon {
+  fill: #fff;
 }
