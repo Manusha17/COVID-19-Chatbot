@@ -1,2 +1,2 @@
 # COVID-19-Chatbot
-Created with CodeSandbox
+A COVID 19 Chatbot for React apps
