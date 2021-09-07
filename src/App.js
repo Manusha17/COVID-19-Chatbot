@@ -24,8 +24,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>COVID-19-Chatbot</h1>
+      <h2>Start chatting with the COVID-19-Chatbot!</h2>
       <Chatbot
         config={config}
         messageParser={MessageParser}
