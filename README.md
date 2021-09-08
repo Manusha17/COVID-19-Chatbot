@@ -1,4 +1,5 @@
 # COVID-19-Chatbot
 A COVID 19 Chatbot for React apps
 
-![COVID-19-ChatBot-2](https://user-images.githubusercontent.com/45126869/132444731-bfc40a77-fcca-4687-9c3d-92132dad0928.gif)
+![COVID-19-ChatBot](https://user-images.githubusercontent.com/45126869/132464863-87b10d49-449e-4be8-8756-f2fc19f28a44.gif)
+
