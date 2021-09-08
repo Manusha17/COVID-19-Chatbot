@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
 import { getData } from "../data";
 
 const Statistics = () => {
   const [stats, setStats] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getStats = async () => {
@@ -12,6 +14,7 @@ const Statistics = () => {
       // const filteredFlights = flights.filter((item) => item.Status === null);
 
       setStats(stats);
+      setLoading(false);
     };
     getStats();
   }, []);
@@ -24,7 +27,9 @@ const Statistics = () => {
         <p> Recovered :</p>
         <p> Deaths :</p>
       </div>
+
       <div className="column-right">
+        <ClipLoader color={"#fff"} loading={loading} />
         <p>{stats.global_total_cases}</p>
         <p>{stats.global_new_cases}</p>
         <p>{stats.global_recovered}</p>
