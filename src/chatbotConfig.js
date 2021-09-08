@@ -41,7 +41,6 @@ const config = {
     {
       widgetName: "globalStatistics",
       widgetFunc: (props) => <GlobalStatistics />
-      // mapStateToProps: ["statsType"]
     },
     {
       widgetName: "localStatistics",
@@ -55,11 +54,6 @@ const config = {
       widgetName: "medicineDelivery",
       widgetFunc: (props) => <MedicineDelivery />
     }
-    // {
-    //   widgetName: "actionProvider",
-    //   widgetFunc: (props) => <ActionProvider {...props} />,
-    //   mapStateToProps: ["gist"]
-    // }
   ]
 };
 
