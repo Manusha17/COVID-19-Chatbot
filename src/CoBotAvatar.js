@@ -1,12 +1,15 @@
 import React from "react";
 
-import { ReactComponent as BotAvatar } from "./icons/bot.svg";
+import BotAvatar from "./icons/bot.svg";
 
 const CoBotAvatar = () => {
   return (
     <div className="react-chatbot-kit-chat-bot-avatar">
-      <div className="react-chatbot-kit-chat-bot-avatar-container">
-        <BotAvatar className="react-chatbot-kit-chat-bot-avatar-icon" />
+      <div
+        className="react-chatbot-kit-chat-bot-avatar-container"
+        style={{ background: "none" }}
+      >
+        <img alt="BotAvatar" src={BotAvatar} />
       </div>
     </div>
   );
