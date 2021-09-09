@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useState } from "react";
+import MetaTags from "react-meta-tags";
 import Chatbot from "react-chatbot-kit";
 import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
@@ -10,8 +11,13 @@ export default function App() {
 
   return (
     <div className="App">
+      <MetaTags>
+        <title> COVID-19-Chatbot </title>
+        <meta name="description" content="COVID 19 assistance chatbot." />
+      </MetaTags>
       <h1>COVID-19-Chatbot</h1>
       <h2>Start chatting with the COVID-19-Chatbot!</h2>
+      <h3>Type in tell a joke and see what happens...</h3>
       <div className="app-chatbot-container">
         {showBot && (
           <Chatbot
