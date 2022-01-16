@@ -11,7 +11,8 @@
     "react-meta-tags": "1.0.1",
     "react-reveal": "1.2.2",
     "react-scripts": "4.0.0",
-    "react-spinners": "0.11.0"
+    "react-spinners": "0.11.0",
+    "typed.js": "2.0.12"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

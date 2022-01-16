@@ -7,6 +7,7 @@ import Chatbot from "react-chatbot-kit";
 import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
+import TypedReact from "./TypedReact";
 
 export default function App() {
   const [showBot, toggleBot] = useState(false);
@@ -20,8 +21,8 @@ export default function App() {
       <Fade bottom cascade>
         <h1>COVID-19-Chatbot</h1>
         <h2>Start chatting with the COVID-19-Chatbot!</h2>
-        <h3>Type in tell a joke and see what happens...</h3>
       </Fade>
+      <TypedReact />
       {showBot && (
         <Fade big>
           <div className="app-chatbot-container">
